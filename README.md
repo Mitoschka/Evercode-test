@@ -1,2 +1,17 @@
-# Evercode-test
- This is a repository with a completed test case from Evercode Lab
+# Инструкция к коду
+
+Сервер поднимается локально на порту `3000`
+
+POST метод можно вызвать следующим образом:
+```
+curl -X POST http://localhost:3000/generate
+```
+
+GET метод можно вызвать следующим образом:
+```
+curl -X GET http://localhost:3000/retrieve/<индификатор>
+```
+
+Все значения записываются локально в `database.json`. Файл создаётся при обращении к любому из запросов запросу
+
+Надёжность защиты от коллизии генерации ID осуществляется при помощи библиотеки [Nano ID](https://zelark.github.io/nano-id-cc/)
