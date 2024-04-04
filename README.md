@@ -9,7 +9,7 @@ curl -X POST http://localhost:3000/generate
 
 GET метод можно вызвать следующим образом:
 ```
-curl -X GET http://localhost:3000/retrieve/<индификатор>
+curl -X GET http://localhost:3000/retrieve/<идентификатор>
 ```
 
 Все значения записываются локально в `database.json`. Файл создаётся при обращении к любому из запросов
